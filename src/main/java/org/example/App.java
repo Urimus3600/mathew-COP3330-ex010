@@ -33,7 +33,9 @@ public class App
 
         double subtotal = roundMoney(price1 * amt1 + price2 * amt2 + price3 * amt3);
         double tax = roundMoney(.055 * subtotal);
+        double total = subtotal + tax;
+
         System.out.print("Subtotal: $"+ subtotal + "\nTax: $" + tax +
-                "\n Total: $" + (subtotal + tax));
+                "\n Total: $" + total);
     }
 }
